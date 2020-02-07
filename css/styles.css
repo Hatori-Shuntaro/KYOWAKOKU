@@ -1,20 +1,51 @@
-body{
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
-    margin: auto;
-}
-div{
-    text-align: center;
-    width: 150;
-    height: 150;
+@charset "utf-8";
+body {
+    font-family: sans-serif;
+    background-color: black;
 }
 footer{
-    position: relative; bottom: 0;
-}
-p{
-    color: darkgray;
+    position: relative;
+    bottom: 5%;
+    width: 100%;
     text-align: center;
+    color: gray;
+}
+.home-image {
+    float: left;
+    width: 200px;
+    height: 200px;
+    padding:1px;
+    border:1px solid rgb(255, 255, 255);
+    margin:20px;
+    background-color: rgba(0, 0, 0, 0.671);
+}
+.new-information {
+    float: none;
+    width: auto;
+    height: 200px;
+    padding:1px;
+    border:1px solid rgb(255, 255, 255);
+    margin-left: 250px;
+    margin-top: 25px;
+    background-color: rgba(0, 0, 0, 0.671);
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: 180px;
+    color: white;
+}
+.member-contents {
+    display: block;
+    clear: both;
+    width: 200px;
+    height: 400px;
+    padding:1px;
+    border:1px solid rgb(255, 255, 255);
+    margin:20px;
+    background-color: rgba(0, 0, 0, 0.671);
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
