@@ -1,7 +1,54 @@
 @charset "utf-8";
+
 body {
+    margin: 0;
     font-family: sans-serif;
-    background-color: black;
+}
+
+.header-inner {
+    background: #bad7f5;
+}
+.nav-inner {
+    color: #fff;
+    background: #0086f9;
+}
+.content-inner {
+    background: #fffde3;
+    /*通常のWebデザインでは高さは指定しない*/
+    height: 400px;
+}
+.side-bar-inner {
+    background: #c0f5b9;
+}
+.footer-inner {
+    background: #bad7f5;
+}
+
+/*
+.wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+.home img {
+    float: left;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 20px 0 20px 20px;
+}
+.new-information img {
+    float: left;
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 20px auto 20px auto;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 footer{
     position: relative;
@@ -10,42 +57,4 @@ footer{
     text-align: center;
     color: gray;
 }
-.home-image {
-    float: left;
-    width: 200px;
-    height: 200px;
-    padding:1px;
-    border:1px solid rgb(255, 255, 255);
-    margin:20px;
-    background-color: rgba(0, 0, 0, 0.671);
-}
-.new-information {
-    float: none;
-    width: auto;
-    height: 200px;
-    padding:1px;
-    border:1px solid rgb(255, 255, 255);
-    margin-left: 250px;
-    margin-top: 25px;
-    background-color: rgba(0, 0, 0, 0.671);
-
-    text-align: center;
-    vertical-align: middle;
-    line-height: 180px;
-    color: white;
-}
-.member-contents {
-    display: block;
-    clear: both;
-    width: 200px;
-    height: 400px;
-    padding:1px;
-    border:1px solid rgb(255, 255, 255);
-    margin:20px;
-    background-color: rgba(0, 0, 0, 0.671);
-}
-.img-responsive {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+*/
