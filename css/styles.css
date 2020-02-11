@@ -9,7 +9,7 @@ body {
     /*各パートがウィンドウの端につかないようにするには，ここにpaddingを設定する*/
     /*ページの横幅の上限を設定．ページ全体をウィンドウの中央に配置．*/
     margin: 0 auto 0 auto;
-    padding: 0 100px 0 100px;
+    padding: 0 80px 0 80px;
     max-width: 1000px;
 }
 section .container {
@@ -22,7 +22,15 @@ section .container {
 
 .header-inner {
     padding: 50px 10px 0 10px;
+    display: flex;
+    flex-flow: row;
     /*background: #bad7f5;*/
+}
+.header-inner .icon, .logo {
+    padding: 0 20px 0 20px;
+}
+.icon img {
+    border-radius: 10px;
 }
 .nav-inner {
     padding: 10px 10px 0 10px;
@@ -39,11 +47,6 @@ section .container {
 .sidebar-inner {
     padding: 20px 10px 20px 10px;
     /*background: #c0f5b9;*/
-}
-.sidebar-inner img {
-    width: 250px;
-    height: 250px;
-    border-radius: 8px;
 }
 .sidebar-inner ul {
     line-height: 1.7;
@@ -73,38 +76,3 @@ section .container {
         order: 1;
     }
 }
-
-/*
-.wrapper {
-    overflow: hidden;
-    width: 100%;
-}
-.home img {
-    float: left;
-    width: 200px;
-    height: 200px;
-    padding: 10px;
-    border: 1px solid rgb(255, 255, 255);
-    margin: 20px 0 20px 20px;
-}
-.new-information img {
-    float: left;
-    width: 500px;
-    height: 200px;
-    padding: 10px;
-    border: 1px solid rgb(255, 255, 255);
-    margin: 20px auto 20px auto;
-}
-.img-responsive {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-footer{
-    position: relative;
-    bottom: 5%;
-    width: 100%;
-    text-align: center;
-    color: gray;
-}
-*/
