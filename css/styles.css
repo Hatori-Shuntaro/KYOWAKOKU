@@ -3,6 +3,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
+    font-size: 16px;
     background: linear-gradient(#514a9d, #24c6dc);
 }
 .container {
@@ -21,16 +22,14 @@ section .container {
 /*ナビゲーションとメインの間にスペースを設けるには，メインの上下にマージンをつける*/
 
 .header-inner {
-    padding: 50px 10px 0 10px;
+    padding: 20px 10px 0 10px;
     display: flex;
     flex-flow: row;
     /*background: #bad7f5;*/
 }
-.header-inner .icon, .logo {
-    padding: 0 20px 0 20px;
-}
-.icon img {
-    border-radius: 10px;
+.header-inner img {
+    max-width: 500;
+    margin: 0 auto 0 auto;
 }
 .nav-inner {
     padding: 10px 10px 0 10px;
@@ -57,6 +56,10 @@ section .container {
     text-align: center;
     /*background: #bad7f5;*/
 }
+.footer-inner img {
+    max-width: 200;
+    margin: 0 auto 0 auto;
+}
 .img-responsive {
     display: block;
     max-width: 100%;
@@ -72,7 +75,7 @@ section .container {
         order: 2;
     }
     .sidebar-inner {
-        flex: 0 0 250px;
+        flex: 0 0 200px;
         order: 1;
     }
 }
