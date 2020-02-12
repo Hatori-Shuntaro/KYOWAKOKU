@@ -41,14 +41,38 @@ section .container {
     margin: 0;
     /*background: #fffde3;*/
     /*通常のWebデザインでは高さは指定しない*/
-    height: 800px;
+    /*height: 800px;*/
+}
+.maincontent-inner img {
+    margin: 0 auto 0 auto;
+    padding: 10px;
 }
 .sidebar-inner {
     padding: 20px 10px 20px 10px;
+    font-family: 'Quicksand', sans-serif;
     /*background: #c0f5b9;*/
 }
-.sidebar-inner ul {
-    line-height: 1.7;
+.creation-sidebar {
+    border-radius: 7px;
+    background: linear-gradient(#24c6dc, #514a9d);
+}
+.personal-sidebar {
+    border-radius: 7px;
+    background: linear-gradient(#24c6dc, #514a9d);
+}
+.sidebar-inner p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px 0 10px 10px;
+    font-size: 20px;
+    color: white;
+}
+.sidebar-inner a {
+    text-decoration: none;
+}
+.sidebar-title {
+    background: linear-gradient(#24c6dc, #514a9d);
+    border-radius: 7px;
 }
 .footer-inner {
     padding: 20px 16px 10px 16px;
@@ -63,6 +87,7 @@ section .container {
 .img-responsive {
     display: block;
     max-width: 100%;
+    width: auto;
     height: auto;
 }
 
