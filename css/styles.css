@@ -1,16 +1,28 @@
 @charset "utf-8";
 
+/*
+font-family: 'Orbitron', ;
+font-family: 'Press Start 2P', ;
+font-family: 'Bungee Inline', ;
+font-family: 'Vast Shadow', ;
+font-family: 'Faster One', ;
+font-family: 'Bungee Shade', ;
+font-family: 'Monofett', ;
+font-family: 'Bungee Outline', ;
+*/
+
 body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Orbitron';
     font-size: 16px;
-    background: linear-gradient(#514a9d, #24c6dc);
+    background-color: rgb(216, 216, 216);
+    /*background: linear-gradient(#514a9d, #24c6dc);*/
 }
 .container {
     /*各パートがウィンドウの端につかないようにするには，ここにpaddingを設定する*/
     /*ページの横幅の上限を設定．ページ全体をウィンドウの中央に配置．*/
     margin: 0 auto 0 auto;
-    padding: 0 80px 0 80px;
+    padding: 0;
     max-width: 1000px;
 }
 section .container {
@@ -22,57 +34,60 @@ section .container {
 /*ナビゲーションとメインの間にスペースを設けるには，メインの上下にマージンをつける*/
 
 .header-inner {
-    padding: 20px 10px 0 10px;
-    display: flex;
-    flex-flow: row;
-    /*background: #bad7f5;*/
+    padding: 20px 10px 20px 10px;
 }
 .header-inner img {
     max-width: 500;
     margin: 0 auto 0 auto;
 }
-.nav-inner {
-    padding: 10px 10px 0 10px;
+.navbar {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-around;
+    font-size: 18px;
+    background: #565656;
+}
+.navbar li a {
+    display: block;
+    padding: 10px 8px;
     color: #fff;
-    /*background: #0086f9;*/
+    font-size: 20px;
+    font-family: 'Press Start 2P';
+    text-decoration: none;
+}
+.navbar li a:hover {
+	background: #fff;
+	color: #565656;
 }
 .maincontent-inner {
-    padding: 20px 10px 20px 10px;
-    margin: 0;
-    /*background: #fffde3;*/
+    width: 400px;
+    margin: 30px auto 30px auto;
+    background: whitesmoke;
     /*通常のWebデザインでは高さは指定しない*/
     /*height: 800px;*/
 }
 .maincontent-inner img {
     margin: 0 auto 0 auto;
-    padding: 10px;
 }
-.sidebar-inner {
-    padding: 20px 10px 20px 10px;
-    font-family: 'Quicksand', sans-serif;
-    /*background: #c0f5b9;*/
+.maincontent-inner h3 {
+    margin: 0.5em 0 0.5em 0;
 }
-.creation-sidebar {
-    border-radius: 7px;
-    background: linear-gradient(#24c6dc, #514a9d);
+.maincontent-inner p {
+    margin: 0;
+    padding: 0 0 10px 0;
+    font-size: 12px;
+    color: #666666;
 }
-.personal-sidebar {
-    border-radius: 7px;
-    background: linear-gradient(#24c6dc, #514a9d);
+.sidebar {
+    /*メインコンテンツと少し間隔を開けたかったので，上のパディングだけ30pxに設定した．*/
+    padding: 30px 10px 0 10px;
+    margin: 0;
+    text-align: center;
 }
-.sidebar-inner p {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 10px 0 10px 10px;
-    font-size: 20px;
-    color: white;
-}
-.sidebar-inner a {
+.sidebar a {
     text-decoration: none;
-}
-.sidebar-title {
-    background: linear-gradient(#24c6dc, #514a9d);
-    border-radius: 7px;
 }
 .footer-inner {
     padding: 20px 16px 10px 16px;
@@ -92,15 +107,5 @@ section .container {
 }
 
 @media only screen and (min-width: 768px) {
-    section .container {
-        flex-flow: row;
-    }
-    main {
-        flex: 1 1 auto;
-        order: 2;
-    }
-    .sidebar-inner {
-        flex: 0 0 200px;
-        order: 1;
-    }
+
 }
