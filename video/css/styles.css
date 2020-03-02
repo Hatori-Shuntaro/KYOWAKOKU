@@ -72,25 +72,14 @@ main {
     display: flex;
     flex-flow: row;
     margin-top: 10px;
+    list-style-type: none;
 }
 .maincontent-inner {
     width: 80%;
-    margin: 10px 10px 10px 10px;
+    margin: 10px auto 10px auto;
     background: white;
     /*通常のWebデザインでは高さは指定しない*/
     /*height: 800px;*/
-}
-.maincontent-inner img {
-    margin: 0 auto 0 auto;
-}
-.maincontent-inner h3 {
-    margin: 0.5em 0 0.5em 5px;
-}
-.maincontent-inner p {
-    margin: 0;
-    padding: 0 0 10px 5px;
-    font-size: 12px;
-    color: #666666;
 }
 .sidebar {
     /*メインコンテンツと少し間隔を開けたかったので，上のパディングだけ30pxに設定した．*/
