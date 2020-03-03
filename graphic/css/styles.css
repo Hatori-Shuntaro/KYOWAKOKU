@@ -76,7 +76,6 @@ main {
 .maincontent-inner {
     width: 80%;
     margin: 10px 10px 10px 10px;
-    background: white;
     /*通常のWebデザインでは高さは指定しない*/
     /*height: 800px;*/
 }

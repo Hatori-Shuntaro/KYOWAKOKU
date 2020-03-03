@@ -3,12 +3,7 @@
 /*
 font-family: 'Orbitron', ;
 font-family: 'Press Start 2P', ;
-font-family: 'Bungee Inline', ;
-font-family: 'Vast Shadow', ;
-font-family: 'Faster One', ;
-font-family: 'Bungee Shade', ;
-font-family: 'Monofett', ;
-font-family: 'Bungee Outline', ;
+font-family: 'Sawarabi Mincho', sans-serif;
 */
 
 body {
@@ -69,17 +64,35 @@ section .container {
 	color: #565656;
 }
 main {
-    display: flex;
-    flex-flow: row;
+    display: block;
     margin-top: 10px;
     list-style-type: none;
 }
+main h1 {
+    width: 80%;
+    margin: 10px auto 10px 20px;
+}
 .maincontent-inner {
     width: 80%;
-    margin: 10px auto 10px auto;
+    margin: 20px auto 20px auto;
     background: white;
     /*通常のWebデザインでは高さは指定しない*/
     /*height: 800px;*/
+}
+.maincontent-inner a {
+    text-decoration: none;
+}
+.maincontent-inner img {
+    margin: 0 auto 0 auto;
+}
+.maincontent-inner h3 {
+    margin: 0.5em 0 0.5em 5px;
+}
+.maincontent-inner p {
+    margin: 0;
+    padding: 0 0 10px 5px;
+    font-size: 12px;
+    color: #666666;
 }
 .sidebar {
     /*メインコンテンツと少し間隔を開けたかったので，上のパディングだけ30pxに設定した．*/
