@@ -71,6 +71,7 @@ main {
 .maincontent-inner {
     width: 80%;
     margin: 10px 10px 10px 10px;
+    font-family: 'Sawarabi Mincho'
     /*通常のWebデザインでは高さは指定しない*/
     /*height: 800px;*/
 }
