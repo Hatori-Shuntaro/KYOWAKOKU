@@ -6,11 +6,13 @@ font-family: 'Press Start 2P', ;
 font-family: 'Sawarabi Mincho', sans-serif;
 */
 
+#all-content {
+    display: none;
+}
 body {
     margin: 0;
     font-family: 'Orbitron';
     font-size: 16px;
-    /*background-color: rgb(216, 216, 216);*/
     background: rgb(230, 230, 230);
 }
 .container {
@@ -28,6 +30,20 @@ section .container {
 /*各パートにpadding，背景，テキスト色などを指定する*/
 /*ナビゲーションとメインの間にスペースを設けるには，メインの上下にマージンをつける*/
 
+#loading {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    z-index: 1;
+}
+#loading img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
 .header-inner {
     display: flex;
     flex-flow: row;
