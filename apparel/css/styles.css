@@ -95,13 +95,6 @@ main {
 .maincontent-inner li:last-of-type {
     margin-right: 0;
 }
-.maincontent-inner p {
-    margin: 0;
-    padding: 0 0 10px 5px;
-    font-size: 18px;
-    font-family: 'Sawarabi Mincho';
-    color: #666666;
-}
 .sidebar {
     /*メインコンテンツと少し間隔を開けたかったので，上のパディングだけ30pxに設定した．*/
     padding: 30px 10px 0 10px;
