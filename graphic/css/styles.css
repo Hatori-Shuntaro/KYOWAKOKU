@@ -69,27 +69,34 @@ section .container {
 	color: #565656;
 }
 main {
-    display: flex;
-    flex-flow: row;
     margin-top: 10px;
 }
 .maincontent-inner {
     width: 80%;
-    margin: 10px 10px 10px 10px;
+    margin: 10px auto 30px auto;
     /*通常のWebデザインでは高さは指定しない*/
     /*height: 800px;*/
 }
 .maincontent-inner img {
+    max-width: 100%;
+}
+.maincontent-inner .center {
     margin: 0 auto 0 auto;
+    max-width: 90%;
+    width: 500px;
 }
-.maincontent-inner h3 {
-    margin: 0.5em 0 0.5em 5px;
-}
-.maincontent-inner p {
+.maincontent-inner ul {
+    display: flex;
     margin: 0;
-    padding: 0 0 10px 5px;
-    font-size: 12px;
-    color: #666666;
+    padding: 0;
+    list-style-type: none;
+}
+.maincontent-inner li {
+    flex: 1 1 auto;
+    margin-right: 8px;
+}
+.maincontent-inner li:last-of-type {
+    margin-right: 0;
 }
 .sidebar {
     /*メインコンテンツと少し間隔を開けたかったので，上のパディングだけ30pxに設定した．*/
