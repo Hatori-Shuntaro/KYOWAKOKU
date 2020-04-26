@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 /*
 font-family: 'Orbitron', ;
 font-family: 'Press Start 2P', ;
@@ -12,6 +11,7 @@ body {
     font-size: 16px;
     background: rgb(230, 230, 230);
 }
+
 .container {
     /*各パートがウィンドウの端につかないようにするには，ここにpaddingを設定する*/
     /*ページの横幅の上限を設定．ページ全体をウィンドウの中央に配置．*/
@@ -19,30 +19,38 @@ body {
     padding: 0;
     max-width: 1000px;
 }
+
 section .container {
     display: flex;
     flex-flow: column;
 }
 
 /*各パートにpadding，背景，テキスト色などを指定する*/
+
 /*ナビゲーションとメインの間にスペースを設けるには，メインの上下にマージンをつける*/
 
 .header-inner {
     display: flex;
     flex-flow: row;
-    padding: 20px 10px;
-    border-bottom: 1px dashed gray;
+    /* border-bottom: 1px dashed gray; */
 }
-.header-inner img {
+
+/* .header-inner img {
+    margin: 0 auto 0 auto;
+} */
+
+#title-canvas {
     margin: 0 auto 0 auto;
 }
-.hamburger {
+
+/* .hamburger {
     border: none;
     width: 50px;
     height: 50px;
     background: url(../images/hamburger.png) no-repeat;
     background-size: contain;
-}
+} */
+
 .navbar {
     display: none;
     margin: 0;
@@ -50,6 +58,7 @@ section .container {
     list-style-type: none;
     background: #565656;
 }
+
 .navbar li a {
     display: block;
     padding: 10px 8px;
@@ -58,16 +67,19 @@ section .container {
     font-family: 'Press Start 2P';
     text-decoration: none;
 }
+
 .navbar li a:hover {
-	background: #fff;
-	color: #565656;
+    background: #fff;
+    color: #565656;
 }
+
 main {
     display: flex;
     flex-flow: row;
     margin-top: 10px;
     list-style-type: none;
 }
+
 .maincontent-inner {
     width: 80%;
     margin: 10px 10px 10px 10px;
@@ -75,77 +87,95 @@ main {
     /*通常のWebデザインでは高さは指定しない*/
     /*height: 800px;*/
 }
+
 .maincontent-inner a {
     text-decoration: none;
 }
+
 .maincontent-inner img {
     margin: 0 auto 0 auto;
 }
+
 .maincontent-inner h3 {
     margin: 0.5em 0 0.5em 5px;
 }
+
 .maincontent-inner p {
     margin: 0;
     padding: 0 0 10px 5px;
     font-size: 12px;
     color: #666666;
 }
+
 .maincontent-inner1 {
     width: 80%;
     margin: 10px auto 10px auto;
     font-family: 'Sawarabi Mincho';
     background: white;
 }
+
 .maincontent-inner1 a {
     text-decoration: none;
 }
+
 .maincontent-inner1 img {
     margin: 0 auto 0 auto;
 }
+
 .maincontent-inner1 h3 {
     margin: 0.5em 0 0.5em 5px;
 }
+
 .maincontent-inner1 p {
     margin: 0;
     padding: 0 0 10px 5px;
     font-size: 12px;
     color: #666666;
 }
-.content-title .maincontent-inner{
+
+.content-title .maincontent-inner {
     /* タイトルの背景は白にしたくない*/
     background: rgb(230, 230, 230);
 }
+
 .sidebar {
     /*メインコンテンツと少し間隔を開けたかったので，上のパディングだけ30pxに設定した．*/
     padding: 30px 10px 0 10px;
     margin: 0;
 }
+
 .sidebar img {
     margin: 10px 10px 10px auto;
     width: 30px;
     height: 30px;
 }
+
 .sidebar p {
     margin: 1em auto 1em 0;
 }
+
 .sidebar a {
     text-decoration: none;
 }
+
 .sidebar .wrapper {
     max-width: 200px;
     display: flex;
     margin: 0 auto 0 auto;
 }
+
 .footer-inner {
     padding: 20px 16px 10px 16px;
     color: gray;
     text-align: center;
     /*background: #bad7f5;*/
 }
+
 .footer-inner img {
     max-width: 200;
     margin: 0 auto 0 auto;
 }
+
 .img-responsive {
     display: block;
     max-width: 100%;
@@ -155,7 +185,7 @@ main {
 
 @media only screen and (min-width: 768px) {
     .header-inner {
-        border-bottom: none;
+        /* border-bottom: none; */
     }
     .header-inner img {
         width: auto;
