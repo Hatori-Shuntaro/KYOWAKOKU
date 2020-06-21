@@ -13,8 +13,6 @@ body {
 }
 
 .container {
-    /*各パートがウィンドウの端につかないようにするには，ここにpaddingを設定する*/
-    /*ページの横幅の上限を設定．ページ全体をウィンドウの中央に配置．*/
     margin: 0 auto 0 auto;
     padding: 0;
     max-width: 1000px;
@@ -25,10 +23,6 @@ section .container {
     flex-flow: column;
 }
 
-/*各パートにpadding，背景，テキスト色などを指定する*/
-
-/*ナビゲーションとメインの間にスペースを設けるには，メインの上下にマージンをつける*/
-
 .header-inner {
     display: flex;
     flex-flow: row;
@@ -38,10 +32,6 @@ section .container {
 .header-inner img {
     margin: 0 auto 0 auto;
 }
-
-/* #title-canvas {
-    margin: 0 auto 0 auto;
-} */
 
 .hamburger {
     border: none;
@@ -74,74 +64,12 @@ section .container {
 }
 
 main {
-    display: flex;
-    flex-flow: row;
-    margin-top: 10px;
+    margin: 10px 0 50px 0;
     list-style-type: none;
 }
 
-.maincontent-inner {
-    width: 80%;
-    margin: 10px 10px 10px 10px;
-    background: white;
-    /*通常のWebデザインでは高さは指定しない*/
-    /*height: 800px;*/
-}
-
-.maincontent-inner a {
-    text-decoration: none;
-}
-
-.maincontent-inner img {
-    margin: 0 auto 0 auto;
-}
-
-.maincontent-inner h3 {
-    margin: 0.5em 0 0.5em 5px;
-}
-
-.maincontent-inner p {
-    margin: 0;
-    padding: 0 0 10px 5px;
-    font-size: 12px;
-    color: #666666;
-}
-
-.maincontent-inner1 {
-    width: 80%;
-    margin: 10px auto 10px auto;
-    font-family: 'Sawarabi Mincho';
-    background: white;
-}
-
-.maincontent-inner1 a {
-    text-decoration: none;
-}
-
-.maincontent-inner1 img {
-    margin: 0 auto 0 auto;
-}
-
-.maincontent-inner1 h3 {
-    margin: 0.5em 0 0.5em 5px;
-}
-
-.maincontent-inner1 p {
-    margin: 0;
-    padding: 0 0 10px 5px;
-    font-size: 12px;
-    color: #666666;
-}
-
-.content-title .maincontent-inner {
-    /* タイトルの背景は白にしたくない*/
-    background: rgb(230, 230, 230);
-}
-
 .sidebar {
-    /*メインコンテンツと少し間隔を開けたかったので，上のパディングだけ30pxに設定した．*/
-    padding: 30px 10px 0 10px;
-    margin: 0;
+    display: flex;
 }
 
 .sidebar img {
@@ -159,16 +87,14 @@ main {
 }
 
 .sidebar .wrapper {
-    max-width: 200px;
     display: flex;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
 }
 
 .footer-inner {
     padding: 20px 16px 10px 16px;
     color: gray;
     text-align: center;
-    /*background: #bad7f5;*/
 }
 
 .footer-inner img {

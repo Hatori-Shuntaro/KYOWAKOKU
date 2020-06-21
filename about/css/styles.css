@@ -1,146 +1,26 @@
 @charset "utf-8";
 
-/*
-font-family: 'Orbitron', ;
-font-family: 'Press Start 2P', ;
-font-family: 'Sawarabi Mincho', sans-serif;
-*/
-
-body {
-    margin: 0;
-    font-family: 'Orbitron';
-    font-size: 16px;
-    /*background-color: rgb(216, 216, 216);*/
-    background: rgb(230, 230, 230);
-}
-.container {
-    /*各パートがウィンドウの端につかないようにするには，ここにpaddingを設定する*/
-    /*ページの横幅の上限を設定．ページ全体をウィンドウの中央に配置．*/
-    margin: 0 auto 0 auto;
-    padding: 0;
-    max-width: 1000px;
-}
-section .container {
-    display: flex;
-    flex-flow: column;
-}
-
-/*各パートにpadding，背景，テキスト色などを指定する*/
-/*ナビゲーションとメインの間にスペースを設けるには，メインの上下にマージンをつける*/
-
-.header-inner {
-    display: flex;
-    flex-flow: row;
-    padding: 20px 10px;
-    border-bottom: 1px dashed gray;
-}
-.header-inner img {
-    margin: 0 auto 0 auto;
-}
-.hamburger {
-    border: none;
-    width: 50px;
-    height: 50px;
-    background: url(../images/hamburger.png) no-repeat;
-    background-size: contain;
-}
-.navbar {
-    display: none;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    background: #565656;
-}
-.navbar li a {
-    display: block;
-    padding: 10px 8px;
-    color: #fff;
-    font-size: 12px;
-    font-family: 'Press Start 2P';
-    text-decoration: none;
-}
-.navbar li a:hover {
-	background: #fff;
-	color: #565656;
-}
-main {
-    display: flex;
-    flex-flow: row;
-    margin-top: 10px;
-}
 .maincontent-inner {
-    width: 80%;
-    margin: 10px auto 10px auto;
     font-family: 'Sawarabi Mincho';
-    /*通常のWebデザインでは高さは指定しない*/
-    /*height: 800px;*/
+    margin: 0 20px;
 }
-.maincontent-inner img {
-    margin: 0 auto 0 auto;
+
+.maincontent-inner h1 {
+    font-size: 36px;
 }
-.maincontent-inner h3 {
-    margin: 0.5em 0 0.5em 5px;
-}
+
 .maincontent-inner p {
     margin: 0;
     padding: 0 0 10px 5px;
-    font-size: 13px;
+    font-size: 18px;
     color: #666666;
-}
-.sidebar {
-    /*メインコンテンツと少し間隔を開けたかったので，上のパディングだけ30pxに設定した．*/
-    padding: 30px 10px 0 10px;
-    margin: 0;
-}
-.sidebar img {
-    margin: 10px 10px 10px auto;
-    width: 30px;
-    height: 30px;
-}
-.sidebar p {
-    margin: 1em auto 1em 0;
-}
-.sidebar a {
-    text-decoration: none;
-}
-.sidebar .wrapper {
-    max-width: 200px;
-    display: flex;
-    margin: 0 auto 0 auto;
-}
-.footer-inner {
-    padding: 20px 16px 10px 16px;
-    color: gray;
-    text-align: center;
-    /*background: #bad7f5;*/
-}
-.footer-inner img {
-    max-width: 200;
-    margin: 0 auto 0 auto;
-}
-.img-responsive {
-    display: block;
-    max-width: 100%;
-    width: auto;
-    height: auto;
 }
 
 @media only screen and (min-width: 768px) {
-    .header-inner {
-        border-bottom: none;
+    .maincontent-inner h1 {
+        font-size: 42px;
     }
-    .header-inner img {
-        width: auto;
-        height: auto;
-    }
-    .hamburger {
-        display: none;
-    }
-    .navbar {
-        display: flex !important;
-        justify-content: space-around;
-    }
-    .navbar li a {
-        font-size: 16px;
+    .maincontent-inner p {
+        font-size: 24px;
     }
 }

@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+.maincontent-inner {
+    width: 80%;
+    margin: 10px auto 10px auto;
+    background: white;
+}
+
+.content-title .maincontent-inner {
+    /* タイトルの背景は白にしたくない*/
+    background: rgb(230, 230, 230);
+}
